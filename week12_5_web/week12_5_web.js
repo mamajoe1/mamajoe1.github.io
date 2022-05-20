@@ -16,14 +16,20 @@ function draw() {
         rect(50, 100, 150, 2);
     if (choice == 2)
         rect(50, 150, 150, 2);
+    if (choice == 3)
+        rect(50, 150, 150, 2);
+    if (choice == 4)
+        rect(50, 150, 150, 2);
     text("泡麵", 50, 50);
     text("Uber Eat", 50, 100);
     text("FoodPanda", 50, 150);
+    text("牛排", 50, 200);
+    text("大餐", 50, 250);
 }
 
 function mousePressed() {
     // choice=(choice+1)%3;
-    choice = int(random(3));
+    choice = int(random(5));
 }
 
 function initializeFields() {
